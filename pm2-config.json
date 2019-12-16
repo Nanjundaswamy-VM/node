@@ -1,0 +1,17 @@
+{
+    "apps" : [{
+      "name": "restaurant-search",
+      "script": "./restaurant/src/server.js",
+      "watch" : true
+    },
+    {
+      "name": "order",
+      "script": "./orders/src/server.js",
+      "watch" : true
+    },
+    {
+      "name": "report",
+      "script": "./report_agg/src/server.js",
+      "watch" : true
+    }]
+}
