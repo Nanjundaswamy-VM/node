@@ -1,3 +1,8 @@
+/**
+ * @file
+ * handle the restaurant related apis.
+ */
+
 'use strict';
 
 const express = require('express')
@@ -5,11 +10,12 @@ const router = express.Router()
 
 const create = require('./save')
 const search = require('./search')
-const res_list = require('./res_list')
+const resList = require('./resList')
 
+//defining routes
 router.post('/search', search.search)
 router.post('/add', create.create);
-router.get('/res_list', res_list.res_list);
+router.get('/resList', resList.resList);
 
 
 module.exports = router;

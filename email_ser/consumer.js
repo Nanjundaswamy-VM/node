@@ -1,4 +1,5 @@
-var q = 'task/M1048280';
+const q = 'task/M1048280';
+const rabitMqConnUrl = "amqp://test:test@mt.nodesense.ai";
  
 // AMQP PORT 5672
 
@@ -7,7 +8,7 @@ var q = 'task/M1048280';
 
 // amqp://mindtree:mindtree@mt.nodesense.ai
 
-var open = require('amqplib').connect('amqp://test:test@mt.nodesense.ai');
+const open = require('amqplib').connect(rabitMqConnUrl);
   
 // Consumer
 open.then(function(conn) {

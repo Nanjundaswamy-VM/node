@@ -1,7 +1,12 @@
+/**
+ * @file
+ * handle the search restaurant api.
+ */
+
 'use strict';
 
-const restaurantservice = require('../services/restaurantservice')
+const restaurantService = require('../services/restaurantService')
 
 module.exports = {
-    search : restaurantservice.search
+    search: restaurantService.search
 }

@@ -1,3 +1,8 @@
+/**
+ * @file
+ * root file of project.
+ */
+
 'use strict';
 
 const express = require('express')
@@ -25,14 +30,14 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   let code = err.statusCode ? err.statusCode : 500;
-  if(err){
+  if (err) {
     res.status(code).json({
       status: "Failure",
       statusCode: code,
       message: err.message,
-      data : []
+      data: []
     });
   }
   //next();
 });
-module.exports = app ;
+module.exports = app;

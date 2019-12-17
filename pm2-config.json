@@ -1,17 +1,17 @@
 {
     "apps" : [{
       "name": "restaurant-search",
-      "script": "./restaurant/src/server.js",
+      "script": "./restaurant/dist/server.js",
       "watch" : true
     },
     {
       "name": "order",
-      "script": "./orders/src/server.js",
+      "script": "./orders/dist/server.js",
       "watch" : true
     },
     {
       "name": "report",
-      "script": "./report_agg/src/server.js",
+      "script": "./report_agg/dist/server.js",
       "watch" : true
     }]
 }

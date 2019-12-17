@@ -1,7 +1,12 @@
+/**
+ * @file
+ * route file to handel to view order.
+ */
+
 'use strict';
 
-const orderservice = require('../services/orderservice')
+const orderService = require('../services/orderService')
 
 module.exports = {
-    vieworder : orderservice.vieworder
+    viewOrder: orderService.viewOrder
 }

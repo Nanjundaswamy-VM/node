@@ -1,7 +1,11 @@
+/**
+ * @file
+ * route file to handel to place order.
+ */
 'use strict';
 
-const orderservice = require('../services/orderservice')
+const orderService = require('../services/orderService')
 
 module.exports = {
-    placeorder : orderservice.placeorder
+    placeOrder: orderService.placeOrder
 }

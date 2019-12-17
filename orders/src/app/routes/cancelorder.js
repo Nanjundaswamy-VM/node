@@ -1,7 +1,12 @@
+/**
+ * @file
+ * route file to handel cancel order.
+ */
+
 'use strict';
 
-const orderservice = require('../services/orderservice')
+const orderService = require('../services/orderService')
 
 module.exports = {
-    cancelorder : orderservice.cancel
+    cancelOrder: orderService.cancel
 }

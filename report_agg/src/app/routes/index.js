@@ -1,12 +1,18 @@
+/**
+ * @file
+ * route file to report related api calls.
+ */
+
 'use strict';
 
 const express = require('express')
 const router = express.Router()
 
-const orderslist = require('./orderslist')
-const orders_totalamount = require('./orders_totalamount')
+//defining routes
+const ordersList = require('./ordersList')
+const ordersTotalAmount = require('./ordersTotalAmount')
 
-router.get('/orders_totalamount', orders_totalamount.orders_totalamount)
-router.get('/orderslist', orderslist.orderslist)
+router.get('/ordersTotalAmount', ordersTotalAmount.ordersTotalAmount)
+router.get('/ordersList', ordersList.ordersList)
 
 module.exports = router;

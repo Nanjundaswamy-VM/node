@@ -1,0 +1,12 @@
+/**
+ * @file
+ * route file to handel to view order.
+ */
+
+'use strict';
+
+var orderService = require('../services/orderService');
+
+module.exports = {
+  viewOrder: orderService.viewOrder };
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9hcHAvcm91dGVzL3ZpZXdPcmRlci5qcyJdLCJuYW1lcyI6WyJvcmRlclNlcnZpY2UiLCJyZXF1aXJlIiwibW9kdWxlIiwiZXhwb3J0cyIsInZpZXdPcmRlciJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0FBS0E7O0FBRUEsSUFBTUEsWUFBWSxHQUFHQyxPQUFPLENBQUMsMEJBQUQsQ0FBNUI7O0FBRUFDLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQjtBQUNiQyxFQUFBQSxTQUFTLEVBQUVKLFlBQVksQ0FBQ0ksU0FEWCxFQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAZmlsZVxyXG4gKiByb3V0ZSBmaWxlIHRvIGhhbmRlbCB0byB2aWV3IG9yZGVyLlxyXG4gKi9cclxuXHJcbid1c2Ugc3RyaWN0JztcclxuXHJcbmNvbnN0IG9yZGVyU2VydmljZSA9IHJlcXVpcmUoJy4uL3NlcnZpY2VzL29yZGVyU2VydmljZScpXHJcblxyXG5tb2R1bGUuZXhwb3J0cyA9IHtcclxuICAgIHZpZXdPcmRlcjogb3JkZXJTZXJ2aWNlLnZpZXdPcmRlclxyXG59Il19

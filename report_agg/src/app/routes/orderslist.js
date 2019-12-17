@@ -1,7 +1,12 @@
+/**
+ * @file
+ * route file to handle get orderlist api.
+ */
+
 'use strict';
 
-const reportservice = require('../services/reportservice')
+const reportService = require('../services/reportService')
 
 module.exports = {
-    orderslist : reportservice.orderslist
+    ordersList: reportService.ordersList
 }

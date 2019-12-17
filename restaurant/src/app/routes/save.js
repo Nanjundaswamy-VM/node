@@ -1,7 +1,12 @@
+/**
+ * @file
+ * handle the save restaurant api.
+ */
+
 'use strict';
 
-const restaurantservice = require('../services/restaurantservice')
+const restaurantService = require('../services/restaurantService')
 
 module.exports = {
-    create : restaurantservice.create
+    create: restaurantService.create
 }
