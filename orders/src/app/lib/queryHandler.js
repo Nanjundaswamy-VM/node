@@ -48,7 +48,7 @@ class QueryHandler {
             }
             skipVal = limitVal * skipVal;
             limitVal = limitVal;
-
+            
             // get the entry with specified fields
             element.find({ $and: [queryObj] }).skip(skipVal).limit(limitVal).exec( function (err, data) {
                 if (err) {
