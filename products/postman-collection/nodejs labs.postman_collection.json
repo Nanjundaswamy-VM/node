@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "4b861318-ad4a-4fba-bd50-08bcfa8dfadb",
+		"name": "nodejs labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/product/list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"list"
+					]
+				},
+				"description": "API to get product list"
+			},
+			"response": []
+		},
+		{
+			"name": "Product details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/product/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"1"
+					]
+				},
+				"description": "API to get Product details"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/product/delete/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"delete",
+						"1"
+					]
+				},
+				"description": "API to delete the product"
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productName\":\"Dell xps 1\",\"productCode\":\"GDN-1234  1\",\"description\":\"New product from dell  1\",\"releasedate\":\"20-01-2018  1\",\"price\":3990.5,\"rating\":3.50,\"imageurl\":\"../images/dellxps1.png\"}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/product/update/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"update",
+						"1"
+					]
+				},
+				"description": "API to update the product"
+			},
+			"response": []
+		},
+		{
+			"name": "Add product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"productId\":4,\"productName\":\"Dell ABC\",\"productCode\":\"GDN-12345\",\"description\":\"New product from dell abc\",\"releasedate\":\"20-01-2018\",\"price\":400.5,\"rating\":4.5,\"imageurl\":\"../images/dellxps-abc.png\"}"
+				},
+				"url": {
+					"raw": "localhost:8081/product/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"add"
+					]
+				},
+				"description": "API to add product"
+			},
+			"response": []
+		}
+	]
+}
