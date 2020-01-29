@@ -8,11 +8,11 @@
 const express = require('express')
 const router = express.Router()
 
-//defining routes
-const ordersList = require('./ordersList')
-const ordersTotalAmount = require('./ordersTotalAmount')
+//including the services file
+const reportService = require('../services/reportService')
 
-router.get('/ordersTotalAmount', ordersTotalAmount.ordersTotalAmount)
-router.get('/ordersList', ordersList.ordersList)
+//defining routes
+router.get('/ordersTotalAmount', reportService.ordersTotalAmount)
+router.get('/ordersList', reportService.ordersList)
 
 module.exports = router;
