@@ -8,14 +8,11 @@
 const express = require('express')
 const router = express.Router()
 
-const create = require('./save')
-const search = require('./search')
-const resList = require('./resList')
+const restaurantService = require('../services/restaurantService')
 
 //defining routes
-router.post('/search', search.search)
-router.post('/add', create.create);
-router.get('/resList', resList.resList);
-
+router.post('/search', restaurantService.search)
+router.post('/add', restaurantService.create)
+router.get('/resList', restaurantService.resList)
 
 module.exports = router;
